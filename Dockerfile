@@ -47,4 +47,4 @@ RUN playwright install --with-deps
 EXPOSE 5000
 
 # Commande pour démarrer l’application avec gunicorn
-CMD ["gunicorn", "scraping:app", "--bind", "0.0.0.0:5000", "--timeout", "180"]
+CMD ["gunicorn", "dep:app", "--bind", "0.0.0.0:5000", "--timeout", "880"]
